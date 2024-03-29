@@ -1,0 +1,109 @@
+/* Home.css */
+
+
+.home-container {
+    position: relative;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    /* background-image: url('/background.jpg'); Update the path to match the filename and location of your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+    
+    .content {
+      position: absolute; /* Position content absolutely within home-container */
+      flex-grow: 1;
+    padding: 20px;
+      top: 50%; /* Align content to the vertical center */
+      left: 50%; /* Align content to the horizontal center */
+      transform: translate(-50%, -50%); /* Center content using translate transform */
+      text-align: center;
+      color: #ffffff; /* Set text color to white */
+    }
+    
+    .main-heading {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+    
+    .sub-heading {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+    
+    .action-button {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .action-button:hover {
+      background-color: #0056b3;
+    }
+  
+    .add-student-box {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #007bff; /* Change border color to blue */
+      border-radius: 5px;
+      background-color: #ffffff; /* Change background color to white */
+      text-decoration: double;
+    }
+    
+    /* .add-student-box:hover {
+      background-color: #007bff; /* Change background color on hover */
+    /* } */ 
+    
+    .action-link {
+      color: #007bff; /* Change link color to blue */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    .action-link:hover {
+      color: #f43e0c; /* Change link color on hover */
+    }
+    .selected-students-container {
+      color: #000000;
+      position: absolute;
+      top: calc(100% + 20px); /* Position it below the previous content with 20px spacing */
+      left: 0;
+      width: 100%; /* Take full width */
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow-y: auto; /* Add scroll if content exceeds container height */
+      max-height: calc(100vh - 120px); /* Limit the height to avoid overlapping with footer */
+    }
+    .navbar {
+      position: fixed; /* Keep the navbar fixed */
+      top: 0; /* Position it at the top of the viewport */
+      left: 0;
+      width: 100%; /* Take full width */
+      z-index: 1000; /* Ensure the navbar stays on top of other content */
+      background-color: #333; /* Add background color */
+      color: #fff; /* Set text color */
+      padding: 10px 20px; /* Add padding */
+    }
+    
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  
+    
+    
+    
